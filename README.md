@@ -1,8 +1,46 @@
-### Artistic Video processing using object segmentation and style transfer
+## Creative Video Processing with Object Segmentation and Style Transfer
 
-TO DO: write short presentation
-githubs
+The idea of this project is to segment a given object on the foreground of a video, and use the segmentation as a mask, in
+order to produce a video where only the foreground has a different transfered style. This easily extends to having only the
+background stylized, or having background and foreground with different styles.<br/>
 
+We perform semi-supervised video segmentation, given one or several already segmented frames of our video. The implementation relies on the Pytorch implementation of [_OSVOS: One-Shot Video Object Segmentation_](https://cvlsegmentation.github.io/osvos/#publication), available [here](https://github.com/kmaninis/OSVOS-PyTorch). <br/>
+We perform fast neural style transfer as seen in [_Perceptual Losses for Real-Time
+Style Transfer and Super-Resolution_](https://arxiv.org/abs/1603.08155v1), and an implentation available [here](https://github.com/rrmina/fast-neural-style-pytorch).
+
+## Demo
+
+<p align = 'center'>  
+<img src="demo_files/breakdance.gif" height="200"/>
+<img src="demo_files/swan_mosaic.gif" height="200"/>
+<img src="demo_files/skate.gif" height="200"/>
+</p>
+
+### OSVOS video segmentaiton
+
+<p align = 'left'>  
+<img src="demo_files/original_video.gif" height="100"/>
+ +
+<img src="demo_files/segmented_frame.png" height="100"/>
+ =
+<img src="demo_files/mask_video.gif" height="100"/>
+</p>
+
+### Fast Neural Style Transfer
+
+<p align = 'left'>  
+<img src="demo_files/original_video.gif" height="100"/>
+ +
+<img src="demo_files/style_image.jpg" height="100"/>
+ =
+<img src="demo_files/style_video.gif" height="100"/>
+</p>
+
+### Merging results
+
+<p align = 'left'>  
+<img src="demo_files/final_video.gif" height="100"/>
+</p>
 
 ### Requirements:
 
@@ -15,6 +53,6 @@ githubs
 
 The notebook should be ready to run !
 
-### Demo
+  
+ 
 
-TO DO: animated gifs of results
