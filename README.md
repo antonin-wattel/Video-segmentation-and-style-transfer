@@ -6,7 +6,9 @@ background stylized, or having background and foreground with different styles.<
 
 We perform semi-supervised video segmentation, given one or several already segmented frames of our video. The implementation relies on the Pytorch implementation of [_OSVOS: One-Shot Video Object Segmentation_](https://cvlsegmentation.github.io/osvos/#publication), available [here](https://github.com/kmaninis/OSVOS-PyTorch). <br/>
 We perform fast neural style transfer as seen in [_Perceptual Losses for Real-Time
-Style Transfer and Super-Resolution_](https://arxiv.org/abs/1603.08155v1), and an implentation available [here](https://github.com/rrmina/fast-neural-style-pytorch).
+Style Transfer and Super-Resolution_](https://arxiv.org/abs/1603.08155v1), and an implentation available [here](https://github.com/rrmina/fast-neural-style-pytorch).<br/>
+
+We proovide here an interactive notebook that can be used to apply this process to your own videos, and train style transfer networks on your own style images. 
 
 ## Demo
 
@@ -43,6 +45,8 @@ Style Transfer and Super-Resolution_](https://arxiv.org/abs/1603.08155v1), and a
 </p>
 
 ### Requirements:
+
+Rq: A cuda capable device is required. <br/>
 
 1. Run environment_setup.sh to create a new conda environment and install necessary packages
 2. Intall ffmpeg and add it to environment variables. See instructions [here](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg)
